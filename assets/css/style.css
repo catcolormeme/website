@@ -640,7 +640,10 @@ body .modal-backdrop {
     justify-content: space-between;
 }
 .bybit_menu_right_sect.bybit_v2_menu_right_sect{
-    justify-content: center;
+    justify-content: flex-end;
+}
+.logo-maluco img{
+    height: 60px;
 }
 .bybit_menu_right_buttons{
     display: flex;
