@@ -11,7 +11,7 @@
     ✅TG: @CatColorToken
     ✅Website: CatColor.live
     ✅Swap: Swap.CatColor.live
-    ✅Whitepaper: Dashboard.CatColor.live
+    ✅Whitepaper: whitepaper.CatColor.live
 
 */
 
