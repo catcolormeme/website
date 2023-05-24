@@ -159,9 +159,10 @@
                             <h4 class="uppercase">Colorful, lively and fun!</h4>
                             <h4>THE BEST NFTS, LIVELY AND FUN!</h4>
                             <h6 style="font-size: 14px;">0x8F9B6a25e915e44B212C6853Fb7b1Ed2cE4e702b</h6>
+                            <h6>Launch in Pancakeswap 27/05/2023</h6>
                             <div class="bybit_v1_baner_buttons mt-43">
-                                <button onclick="window.location.href='https://pancakeswap.finance/swap?outputCurrency=0x8F9B6a25e915e44B212C6853Fb7b1Ed2cE4e702b';" class="mint_btn mr-5 hov_shape_show">
-                                    BUY NOW
+                                <button data-bs-toggle="modal" data-bs-target="#mintModal" class="mint_btn mr-5 hov_shape_show">
+                                    PRE SALE
                                     <span class="hov_shape1"><img src="assets/images/icon/hov_shape_L_dark.svg" alt="" /></span>
                                     <span class="hov_shape2"><img src="assets/images/icon/hov_shape_L_dark.svg" alt="" /></span>
                                     <span class="square_hov_shape_dark"></span>
@@ -602,53 +603,9 @@
         <!-- Mint Modal -->
         <div class="mint_modal"> 
             <div class="modal fade " id="mintModal" tabindex="-1" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal_overlay2">
-                            <div class="modal_header">
-                                <h2>Collect YOUR NFT before end</h2>
-                                <button data-bs-dismiss="modal" aria-label="Close">
-                                    <span class="clossbtn_bg"><i class="fa-solid fa-xmark"></i></span>
-                                </button>
-                            </div>
-                            <div class="modal_body text-center">
-                                <div class="mint_img">
-                                    <img src="assets/images/icon/mint-img.png" alt="img" />
-                                </div>
-                                <div class="mint_count_list">
-                                    <ul>
-                                        <li>
-                                            <h5>Remaining</h5>
-                                            <h5>4583/<span>9999</span></h5>
-                                        </li>
-                                        <li>
-                                            <h5>Price</h5>
-                                            <h5>0.15 ETH</h5>
-                                        </li>
-                                        <li>
-                                            <h5>Quantity</h5>
-                                            <div class="mint_quantity_sect">
-                                                <button onclick="buttonClick_Dec();">-</button>
-                                                <input type="text" id="quantity" value="2">
-                                                <button onclick="buttonClick_Inc();">+</button>
-                                            </div>
-                                            <h5><span>0.30</span> ETH</h5>
-                                        </li>
-
-                                    </ul>
-                                </div>
-                                <button class="modal_mint_btn hov_shape_show">
-                                    MINT NOW
-                                    <span class="hov_shape1"><img src="assets/images/icon/hov_shape_L_dark.svg" alt="" /></span>
-                                    <span class="hov_shape2"><img src="assets/images/icon/hov_shape_L_dark.svg" alt="" /></span>
-                                </button>
-                                <h6>Presale & Whitelist : Soldout</h6>
-                            </div>
-                            <div class="modal_bottom_shape">
-                                <span class="modal_bottom_shape_left"><img src="assets/images/icon/hov_shape_L.svg" alt="" /></span>
-                                <span class="modal_bottom_shape_right"><img src="assets/images/icon/hov_shape_L.svg" alt="" /></span>
-                            </div>
-                        </div>
+                <div class="modal-dialog modal-xl" style="min-width: 95vw; min-height: 95vh;">
+                    <div class="modal-content h-100">
+                        <iframe src="https://prevenda.finance/pre/v2/0x3e2b9f2e2ce902" width="100%" height="100%" style="min-height: 85vh;" frameborder="0"></iframe>
                     </div>
                 </div>
             </div>
