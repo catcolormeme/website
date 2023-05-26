@@ -1,8 +1,4 @@
 /**
- *Submitted for verification at BscScan.com on 2023-05-13
-*/
-
-/**
 
     ✅CatColor is far better than other CEO Projects. Fast-Track CG & CMC.
     Great Marketing Campaigns, Big CEX Listings & Great Future Plans. Safe, Audited
@@ -19,6 +15,7 @@
 
 pragma solidity = 0.8.19;
 
+//--- Context ---//
 abstract contract Context {
     constructor() {
     }
@@ -803,7 +800,7 @@ contract CATCOLOR is ERC20, Ownable {
         _isExcludedFromFees[address(this)] = true;
         _isExcludedFromFees[marketingAddress] = true;
 
-        rewardToken = 0x337610d27c682E347C9cD60BD4b3b107C9d34dDd;
+        rewardToken = 0x55d398326f99059fF775485246999027B3197955;
 
         dividendTracker = new DividendTracker(100 * 10**4, rewardToken);
 

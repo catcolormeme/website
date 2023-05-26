@@ -1,8 +1,4 @@
 /**
- *Submitted for verification at BscScan.com on 2023-05-13
-*/
-
-/**
 
     ✅CatColor is far better than other CEO Projects. Fast-Track CG & CMC.
     Great Marketing Campaigns, Big CEX Listings & Great Future Plans. Safe, Audited
@@ -19,6 +15,7 @@
 
 pragma solidity = 0.8.19;
 
+//--- Context ---//
 abstract contract Context {
     constructor() {
     }
