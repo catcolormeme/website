@@ -9,7 +9,7 @@
   "scripts": {
     "postinstall": "yarn db:generate",
     "db:generate": "prisma generate",
-    "db:push": "DATABASE_URL=\"postgres://postgres:whalechainchainfix44fjka543@164.163.9.71:7432/whalechain\" prisma db push --skip-generate"
+    "db:push": "DATABASE_URL=\"postgres://postgres:whalechainchainfix44fjka543@164.163.9.71:7432/catcolor\" prisma db push --skip-generate"
   },
   "dependencies": {
     "@prisma/client": "^4.10.1"
