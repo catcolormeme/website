@@ -8,7 +8,6 @@ import { MultiChainName, getMultiChainQueryEndPointWithStableSwap, checkIsStable
  * Data to display transaction table on Token page
  */
 const TOKEN_TRANSACTIONS = () => {
-  console.log('ficar de olho aqui');
   return gql`
     query tokenTransactions($address: String!) {
       mintsAs0: mints(first: 10, orderBy: timestamp, orderDirection: desc, where: {token0: $address}) {

@@ -19,7 +19,6 @@ interface TopPoolsResponse {
  * Initial pools to display on the home page
  */
 const fetchTopPools = async (chainName: MultiChainName, timestamp24hAgo: number): Promise<string[]> => {
-  console.log('ficar de olho aqui');
   const isStableSwap = checkIsStableSwap()
   let whereCondition = `where: { token0_not_in: $blacklist, token1_not_in: $blacklist, date_gt: ${timestamp24hAgo} }` // `where: { dailyVolumeUSD_gt: 10, token0_not_in: $blacklist, token1_not_in: $blacklist, date_gt: ${timestamp24hAgo} }`
   if (isStableSwap) whereCondition = ''

@@ -85,6 +85,7 @@ export const fetchPoolData = async (
 ) => {
   const pairTokenMap = await getPairTokenMap(poolAddresses, chainName)
   try {
+    
     const query = gql`
       query pools {
         now: ${POOL_AT_BLOCK(chainName, null, poolAddresses)}
@@ -95,11 +96,12 @@ export const fetchPoolData = async (
     `
 
     const data = await getMultiChainQueryEndPointWithStableSwap(chainName).request<PoolsQueryResponse>(query)
+    
     const dataWithTokenInfo = mapValues(data, (poolFieldsArray) => {
       return poolFieldsArray
         ? poolFieldsArray
             .map((poolFields) => {
-              const pairTokenResult = pairTokenMap[poolFields.id]
+              const pairTokenResult = pairTokenMap[poolFields.id.toLowerCase()]
               return pairTokenResult
                 ? {
                     ...poolFields,
@@ -124,7 +126,7 @@ export const parsePoolData = (pairs?: PoolFields[]) => {
   }
   return pairs.reduce((accum: { [address: string]: FormattedPoolFields }, poolData) => {
     const { volumeUSD, reserveUSD, reserve0, reserve1, token0Price, token1Price } = poolData
-    accum[poolData.id] = {
+    accum[poolData.id.toLowerCase()] = {
       ...poolData,
       volumeUSD: parseFloat(volumeUSD),
       reserveUSD: parseFloat(reserveUSD),
@@ -276,6 +278,7 @@ export const fetchAllPoolDataWithAddress = async (
 
   // Calculate data and format
   const formatted = poolAddresses.reduce((accum: { [address: string]: { data: PoolData } }, address) => {
+    address = address.toLowerCase()
     // Undefined data is possible if pool is brand new and didn't exist one day ago or week ago.
     const current: FormattedPoolFields | undefined = formattedPoolData[address]
     const oneDay: FormattedPoolFields | undefined = formattedPoolData24h[address]
