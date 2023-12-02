@@ -3,7 +3,7 @@
 
 ssh root@164.163.9.71
 Powman@220187
-
+tete
 
 
 https://explorer.evm.shimmer.network/address/0xBbB4CCfc93657AC125F4b1f734111349d1bFF611?tab=contract
