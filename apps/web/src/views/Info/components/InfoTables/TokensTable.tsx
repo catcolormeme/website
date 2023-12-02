@@ -190,7 +190,6 @@ const TokenTable: React.FC<
   if (!tokenDatas) {
     return <Skeleton />
   }
-  console.log(tokenDatas)
   return (
     <TableWrapper>
       <ResponsiveGrid>

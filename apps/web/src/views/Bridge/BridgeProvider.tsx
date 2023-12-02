@@ -137,7 +137,6 @@ export const BridgeProvider: React.FC<PropsWithChildren> = ({ children }) => {
       destinationBridge?.on(
         destinationBridge.filters.ProposalEvent(null, null, null, null) as any,
         async (originDomainId: number, nonce: BigNumber, status: number) => {
-          console.log('ProposalEvent', originDomainId, nonce?.toString(), status)
           if (originDomainId !== homeChainConfig?.domainId) return
           if (nonce.toString() !== depositNonce) return
           if (status === 3) setTransactionStatus('Transfer Completed')

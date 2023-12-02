@@ -23,7 +23,6 @@ export const hasTokenSupplies = async (destinationChain: BridgeChain, token: Tok
     const destinationErc20DHandlerInstance = ERC20HandlerPercentageFeeFactory.connect(destinationErc20Handler, provider)
     const isMintable = await destinationErc20DHandlerInstance._burnList(destinationToken.address)
     if (isMintable) {
-      console.log('token mintable on destination chain')
       return true
     }
     let balanceTokens

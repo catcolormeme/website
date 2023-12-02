@@ -98,7 +98,7 @@ const parseTokenData = (tokens?: TokenFields[]) => {
   }
   return tokens.reduce((accum: { [address: string]: FormattedTokenFields }, tokenData) => {
     const { derivedBNB, derivedUSD, tradeVolumeUSD, totalTransactions, totalLiquidity, derivedETH } = tokenData
-    accum[tokenData.id] = {
+    accum[tokenData.id.toLowerCase()] = {
       ...tokenData,
       derivedBNB: derivedBNB ? 0 : parseFloat(derivedBNB),
       derivedETH: Number.isNaN(Number(derivedETH)) ? 0 : parseFloat(derivedETH),
@@ -231,12 +231,12 @@ export const fetchAllTokenDataByAddresses = async (
 
   // Calculate data and format
   const formatted = tokenAddresses.reduce((accum: { [address: string]: { data: TokenData } }, address) => {
+    address = address.toLowerCase()
     const current: FormattedTokenFields | undefined = parsed[address]
     const oneDay: FormattedTokenFields | undefined = parsed24[address]
     const twoDays: FormattedTokenFields | undefined = parsed48[address]
     const week: FormattedTokenFields | undefined = parsed7d[address]
     const twoWeeks: FormattedTokenFields | undefined = parsed14d[address]
-    console.log(tokenAddresses, 'current');
 
     const [volumeUSD, volumeUSDChange] = getChangeForPeriod(
       current?.tradeVolumeUSD,

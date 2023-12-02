@@ -3,7 +3,6 @@ const telegramChatId = process.env.TELEGRAM_CHAT_ID
 
 export const sendTelegramMessage = async (message: string) => {
   if (process.env.NODE_ENV !== 'production') {
-    console.log(message)
     return
   }
   const url = new URL(`https://api.telegram.org/${telegramApiKey}/sendMessage`)

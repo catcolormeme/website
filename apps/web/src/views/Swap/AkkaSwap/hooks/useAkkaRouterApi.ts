@@ -123,7 +123,6 @@ export const useAkkaRouterApi = (
                     })
                     .catch((error) => {
                       toggleSetAkkaModeToFalse()
-                      console.log(error);
                       captureMessage(`AKKA: EstimateGas Error -> ${error}`, {
                         tags: {
                           chain_id: chainId,
@@ -181,7 +180,6 @@ export const useAkkaRouterApi = (
                     })
                     .catch((error) => {
                       toggleSetAkkaModeToFalse()
-                      console.log(error);
                       captureMessage(`AKKA: EstimateGas Error -> ${error}`, {
                         tags: {
                           chain_id: chainId,

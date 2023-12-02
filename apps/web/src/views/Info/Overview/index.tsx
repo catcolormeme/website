@@ -57,7 +57,6 @@ const Overview: React.FC<React.PropsWithChildren> = () => {
   }, [allTokens])
 
   const allPoolData = useAllPoolDataSWR()
-  console.log('allPoolData', allPoolData)
   // const allPoolData = useAllPoolData()
   const poolDatas = useMemo(() => {
     return Object.values(allPoolData)
