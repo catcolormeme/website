@@ -57,7 +57,7 @@ export const bridgeSectionData = (t: TranslateFunction): SalesSectionProps => ({
 })
 
 export const earnSectionData = (t: TranslateFunction): SalesSectionProps => ({
-  headingText: t('Earn, receive WHALE tokens when providing liquidity'),
+  headingText: t(`Earn, receive ${process.env.NEXT_PUBLIC_NAME_UPPER} tokens when providing liquidity`),
   bodyText: t('With liquidity farms, you can boost your passive income APY for liquidity provision.'),
   reverse: false,
   primaryButton: {

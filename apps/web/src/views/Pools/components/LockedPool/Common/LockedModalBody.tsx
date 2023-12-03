@@ -97,11 +97,13 @@ const LockedModalBody: React.FC<React.PropsWithChildren<LockedModalBodyPropsType
       {cakeNeeded ? (
         hasEnoughBalanceToExtend ? (
           <Text fontSize="12px" mt="24px">
-            {t('0.0001 WHALE will be spent to extend')}
+            {t(`0.0001 ${process.env.NEXT_PUBLIC_NAME_UPPER} will be spent to extend`)}
           </Text>
         ) : (
           <Message variant="warning" mt="24px">
-            <MessageText maxWidth="200px">{t('0.0001 WHALE required for enabling extension')}</MessageText>
+            <MessageText maxWidth="200px">
+              {t(`0.0001 ${process.env.NEXT_PUBLIC_NAME_UPPER} required for enabling extension`)}
+            </MessageText>
           </Message>
         )
       ) : null}

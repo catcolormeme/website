@@ -47,7 +47,7 @@ const AutoEarningsCell: React.FC<React.PropsWithChildren<AutoEarningsCellProps>>
       : null,
   )
 
-  const labelText = t('Recent WHALE profit')
+  const labelText = t(`Recent ${process.env.NEXT_PUBLIC_NAME_UPPER} profit`)
   const earningTokenBalance = autoCakeToDisplay
   const hasEarnings = hasAutoEarnings
   const earningTokenDollarBalance = autoUsdToDisplay

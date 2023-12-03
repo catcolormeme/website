@@ -47,7 +47,7 @@ const CampaignCardDummy: React.FC<LaunchpadCardProps> = (props) => {
         <CampaignCardDummyHeader campaign={campaign} />
         <Flex justifyContent="space-between" alignItems="center">
           <Text fontSize="16px" color="secondary" fontWeight="bold">
-            ~{campaign.dummyRate} UCORE per WHALE
+            ~{campaign.dummyRate} UCORE per {process.env.NEXT_PUBLIC_NAME_UPPER}
           </Text>
         </Flex>
         <Flex justifyContent="space-between" alignItems="center">
@@ -62,15 +62,21 @@ const CampaignCardDummy: React.FC<LaunchpadCardProps> = (props) => {
         </Flex>
         <Flex justifyContent="space-between" alignItems="center">
           <Text fontSize="16px">Max Contribution</Text>
-          <Text fontSize="16px">{campaign.dummyMaxContrib} WHALE</Text>
+          <Text fontSize="16px">
+            {campaign.dummyMaxContrib} {process.env.NEXT_PUBLIC_NAME_UPPER}
+          </Text>
         </Flex>
         <Flex justifyContent="space-between" alignItems="center">
           <Text fontSize="16px">Soft Cap</Text>
-          <Text fontSize="16px">~{campaign.dummySoftCap} WHALE</Text>
+          <Text fontSize="16px">
+            ~{campaign.dummySoftCap} {process.env.NEXT_PUBLIC_NAME_UPPER}
+          </Text>
         </Flex>
         <Flex justifyContent="space-between" alignItems="center">
           <Text fontSize="16px">Hard Cap</Text>
-          <Text fontSize="16px">~{campaign.dummyHardCap} WHALE</Text>
+          <Text fontSize="16px">
+            ~{campaign.dummyHardCap} {process.env.NEXT_PUBLIC_NAME_UPPER}
+          </Text>
         </Flex>
         <Flex justifyContent="space-between" alignItems="center">
           <Text fontSize="16px">Whitelist Duration</Text>

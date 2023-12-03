@@ -145,7 +145,9 @@ const CreateModal: React.FC<DepositModalProps> = (props) => {
       <Divider />
       <Flex alignItems="center" justifyContent="space-between">
         <Text fontSize="1em">{t('Creation Fee')}</Text>
-        <Text fontSize="1em">{feeAmount ? utils.formatUnits(feeAmount, 18).toString() : null} WHALE</Text>
+        <Text fontSize="1em">
+          {feeAmount ? utils.formatUnits(feeAmount, 18).toString() : null} {process.env.NEXT_PUBLIC_NAME_UPPER}
+        </Text>
       </Flex>
       {status === 'connected' ? (
         approvalState !== ApprovalState.APPROVED ? (

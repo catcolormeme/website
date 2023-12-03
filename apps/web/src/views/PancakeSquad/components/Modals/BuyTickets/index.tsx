@@ -97,14 +97,16 @@ const BuyTicketsModal: React.FC<React.PropsWithChildren<BuyTicketsModalProps>> =
               <Text font-size="14px" color="textSubtle">
                 {t('Cost per Ticket')}
               </Text>
-              <Text font-size="14px">{formatBigNumber(pricePerTicket, 0)} WHALE</Text>
+              <Text font-size="14px">
+                {formatBigNumber(pricePerTicket, 0)} {process.env.NEXT_PUBLIC_NAME_UPPER}
+              </Text>
             </Flex>
             <Flex mb="8px" justifyContent="space-between">
               <Text font-size="14px" color="textSubtle">
-                {t('Your WHALE Balance')}
+                {t(`Your ${process.env.NEXT_PUBLIC_NAME_UPPER} Balance`)}
               </Text>
               <Text font-size="14px" color={isCakeBalanceInsufficient ? 'failure' : 'text'}>
-                {formatBigNumber(cakeBalance, 3)} WHALE
+                {formatBigNumber(cakeBalance, 3)} {process.env.NEXT_PUBLIC_NAME_UPPER}
               </Text>
             </Flex>
             <Flex
@@ -125,7 +127,7 @@ const BuyTicketsModal: React.FC<React.PropsWithChildren<BuyTicketsModalProps>> =
                 {t('Total Cost')}
               </Text>
               <Text font-size="14px" bold>
-                {formatBigNumber(totalCost, 0)} WHALE
+                {formatBigNumber(totalCost, 0)} {process.env.NEXT_PUBLIC_NAME_UPPER}
               </Text>
             </Flex>
           </Box>

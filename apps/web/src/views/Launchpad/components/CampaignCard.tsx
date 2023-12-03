@@ -88,7 +88,8 @@ const CampaignCard: React.FC<LaunchpadCardProps> = (props) => {
         <CampaignCardHeader campaign={campaign} />
         <Flex justifyContent="space-between" alignItems="center">
           <Text fontSize="16px" color="secondary" fontWeight="bold">
-            {formatAmount(utils.formatUnits(campaign.rate, token?.decimals))} {token?.symbol} {t('per WHALE')}
+            {formatAmount(utils.formatUnits(campaign.rate, token?.decimals))} {token?.symbol}{' '}
+            {t(`per ${process.env.NEXT_PUBLIC_NAME_UPPER}`)}
           </Text>
         </Flex>
         <Flex ref={tooltip.targetRef} flexDirection="column" gap="0.5em">
@@ -121,7 +122,9 @@ const CampaignCard: React.FC<LaunchpadCardProps> = (props) => {
         {contributed.data && (
           <Flex justifyContent="space-between" alignItems="center">
             <Text fontSize="16px">{t('Contributed')}</Text>
-            <Text fontSize="16px">{formatAmount(utils.formatUnits(contributed.data, 18))} WHALE</Text>
+            <Text fontSize="16px">
+              {formatAmount(utils.formatUnits(contributed.data, 18))} {process.env.NEXT_PUBLIC_NAME_UPPER}
+            </Text>
           </Flex>
         )}
         {started && !ended && (

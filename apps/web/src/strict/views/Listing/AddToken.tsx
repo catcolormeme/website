@@ -62,7 +62,7 @@ export const AddToken: React.FC = () => {
     <AppWrapper title={t('Add Token')} subtitle={t('Add your own token in seconds')}>
       <Text small>
         {t(
-          `You can easily list your token on ${process.env.NEXT_PUBLIC_NAME}. For this you need to complete KYC, delegate the KYC to your token and have a minimum of $4k liquidity, while liquidity paired with WHALE counts double.`,
+          `You can easily list your token on ${process.env.NEXT_PUBLIC_NAME}. For this you need to complete KYC, delegate the KYC to your token and have a minimum of $4k liquidity, while liquidity paired with ${process.env.NEXT_PUBLIC_NAME_UPPER} counts double.`,
         )}
       </Text>
       <br />

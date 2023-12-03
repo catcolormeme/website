@@ -14,7 +14,7 @@ const StaticAmount: React.FC<React.PropsWithChildren<StaticAmountPropsType>> = (
   return (
     <>
       <Text color="textSubtle" textTransform="uppercase" bold fontSize="12px">
-        {t('Add WHALE to lock')}
+        {t(`Add ${process.env.NEXT_PUBLIC_NAME_UPPER} to lock`)}
       </Text>
       <Flex alignItems="center" justifyContent="space-between" mb="16px">
         <Box>

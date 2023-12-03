@@ -68,11 +68,13 @@ const RoiCalculatorFooter: React.FC<React.PropsWithChildren<RoiCalculatorFooterP
     <>
       <Text>
         {t(
-          "The Multiplier represents the proportion of WHALE rewards each farm receives, as a proportion of the WHALE distributed each block."
+          `The Multiplier represents the proportion of ${process.env.NEXT_PUBLIC_NAME_UPPER} rewards each farm receives, as a proportion of the ${process.env.NEXT_PUBLIC_NAME_UPPER} distributed each block.`
         )}
       </Text>
       <Text my="24px">
-        {t("For example, if a 1x farm received 1 WHALE per block, a 40x farm would receive 40 WHALE per block.")}
+        {t(
+          `For example, if a 1x farm received 1 ${process.env.NEXT_PUBLIC_NAME_UPPER} per block, a 40x farm would receive 40 ${process.env.NEXT_PUBLIC_NAME_UPPER} per block.`
+        )}
       </Text>
       <Text>{t("This amount is already included in all APR calculations for the farm.")}</Text>
     </>,
@@ -108,7 +110,7 @@ const RoiCalculatorFooter: React.FC<React.PropsWithChildren<RoiCalculatorFooterP
                   {displayApr}%
                 </Text>
                 <Text color="textSubtle" small>
-                  *{t("Base APR (WHALE yield only)")}
+                  *{t(`Base APR (${process.env.NEXT_PUBLIC_NAME_UPPER} yield only)`)}
                 </Text>
                 <Text small textAlign="right">
                   {apr.toFixed(2)}%

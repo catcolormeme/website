@@ -49,7 +49,7 @@ const CardActions: React.FC<React.PropsWithChildren<FarmCardActionsProps>> = ({
     <Action>
       <Flex>
         <Text bold textTransform="uppercase" color="secondary" fontSize="12px" pr="4px">
-          WHALE
+          {process.env.NEXT_PUBLIC_NAME_UPPER}
         </Text>
         <Text bold textTransform="uppercase" color="textSubtle" fontSize="12px">
           {t('Earned')}

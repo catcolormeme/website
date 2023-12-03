@@ -31,7 +31,7 @@ const BoosterTooltip = () => {
   return (
     <>
       {t(
-        `Boost multiplier is calculated based on the staking conditions from both Farms and fixed-term WHALE syrup pool and will be automatically updated upon user actions.`,
+        `Boost multiplier is calculated based on the staking conditions from both Farms and fixed-term ${process.env.NEXT_PUBLIC_NAME_UPPER} syrup pool and will be automatically updated upon user actions.`,
       )}
       <LinkExternal
         href="https://docs.whalechain.live/products/yield-farming/bcake/faq#how-are-the-bcake-multipliers-calculated"

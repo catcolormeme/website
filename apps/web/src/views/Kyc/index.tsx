@@ -106,7 +106,7 @@ export const Kyc: React.FC = () => {
     else if (!canPay)
       action = (
         <Button disabled height="40px" width="100%">
-          {t('Insufficient WHALE balance')}
+          {t(`Insufficient ${process.env.NEXT_PUBLIC_NAME_UPPER} balance`)}
         </Button>
       )
     else

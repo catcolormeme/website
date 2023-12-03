@@ -106,7 +106,7 @@ export const CreateToken: React.FC = () => {
               {t('Liquidity Distribution')}{' '}
               <InfoTooltip
                 text={t(
-                  'The percentage of the tax that will be added to the liquidity pool and automatically paired with WHALE.',
+                  `The percentage of the tax that will be added to the liquidity pool and automatically paired with ${process.env.NEXT_PUBLIC_NAME_UPPER}.`,
                 )}
               />
             </StyledFlex>

@@ -107,7 +107,7 @@ const config = ({ t }: FAQsType) => [
     title: t('How much reward will I get for providing liquidity?'),
     description: [
       t(
-        '5/6 (83%) of the trading fees are distributed by the dex smart contract to all liquidity providers. Also there are Farming pools to receive additional WHALE tokens and some tokens like SCORE even generate rewards through securing the Blockchain.',
+        `5/6 (83%) of the trading fees are distributed by the dex smart contract to all liquidity providers. Also there are Farming pools to receive additional ${process.env.NEXT_PUBLIC_NAME_UPPER} tokens and some tokens like SCORE even generate rewards through securing the Blockchain.`,
       ),
     ],
   },

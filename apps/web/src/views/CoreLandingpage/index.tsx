@@ -23,8 +23,8 @@ export const swapSectionData = (t: TranslateFunction): any => ({
   headingText: t('HUGE CORE APY!'),
   bodyText: (
     <>
-      {process.env.NEXT_PUBLIC_NAME} will provide <i>huge farm rewards</i> for CORE/USDT and WHALE/USDT liqudity
-      provider
+      {process.env.NEXT_PUBLIC_NAME} will provide <i>huge farm rewards</i> for CORE/USDT and{' '}
+      {process.env.NEXT_PUBLIC_NAME_UPPER}/USDT liqudity provider
     </>
   ),
   reverse: false,

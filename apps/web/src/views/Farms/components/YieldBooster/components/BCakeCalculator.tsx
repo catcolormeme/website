@@ -45,7 +45,7 @@ const BCakeCalculator: React.FC<React.PropsWithChildren<BCakeCalculatorProps>> =
   targetInputBalance,
   earningTokenPrice,
   initialState,
-  stakingTokenSymbol = 'WHALE',
+  stakingTokenSymbol = process.env.NEXT_PUBLIC_NAME_UPPER,
   lpTotalSupply,
   setBCakeMultiplier,
 }) => {
@@ -96,9 +96,12 @@ const BCakeCalculator: React.FC<React.PropsWithChildren<BCakeCalculatorProps>> =
     targetRef: myBalanceTargetRef,
     tooltip: myBalanceTooltip,
     tooltipVisible: myBalanceTooltipVisible,
-  } = useTooltip(t('Boost multiplier calculation does not include profit from WHALE staking pool'), {
-    placement: 'bottom-start',
-  })
+  } = useTooltip(
+    t(`Boost multiplier calculation does not include profit from ${process.env.NEXT_PUBLIC_NAME_UPPER} staking pool`),
+    {
+      placement: 'bottom-start',
+    },
+  )
   const theme = useTheme()
 
   return (

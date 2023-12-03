@@ -80,7 +80,7 @@ const Pools = () => {
               {showFinishedPools && (
                 <FinishedTextContainer>
                   <Text fontSize={['16px', null, '20px']} color="failure" pr="4px">
-                    {t('Looking for v1 WHALE syrup pools?')}
+                    {t(`Looking for v1 ${process.env.NEXT_PUBLIC_NAME_UPPER} syrup pools?`)}
                   </Text>
                   <FinishedTextLink href="/migration" fontSize={['16px', null, '20px']} color="failure">
                     {t('Go to migration page')}.
