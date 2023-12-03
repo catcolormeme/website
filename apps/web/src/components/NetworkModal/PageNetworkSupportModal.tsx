@@ -53,7 +53,7 @@ export function PageNetworkSupportModal() {
           <Button
             variant={foundChain && lastValidPath ? 'secondary' : 'primary'}
             isLoading={isLoading}
-            onClick={() => (isWrongNetwork ? switchNetworkLocal(ChainId.WHALE) : switchNetworkAsync(ChainId.WHALE))}
+            onClick={() => (isWrongNetwork ? switchNetworkLocal(ChainId.BSC) : switchNetworkAsync(ChainId.BSC))}
           >
             {t('Switch to %chain%', { chain: 'Bitgert' })}
           </Button>

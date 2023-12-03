@@ -25,6 +25,9 @@ const getOverviewChartData = async (
   skip: number,
 ): Promise<{ data?: ChartEntry[]; error: boolean }> => {
   try {
+    if (!multiChainStartTime[chainName]) {
+      return { error: true }
+    }
     const { pancakeDayDatas } = await getMultiChainQueryEndPointWithStableSwap(
       chainName,
     ).request<PancakeDayDatasResponse>(PANICE_DAY_DATAS, {

@@ -2,6 +2,7 @@ import { ChainId, ERC20Token, NATIVE, WETH9 } from '@pancakeswap/sdk'
 
 export const bscTokens = {
   usdt: new ERC20Token(ChainId.BSC, '0x55d398326f99059fF775485246999027B3197955', 18, 'USDT', 'Tether USD'),
+  cake: new ERC20Token(ChainId.BSC, '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82', 18, 'CAKE', 'PancakeSwap Token'),
   wbnb: WETH9[ChainId.BSC],
   bnb: NATIVE[ChainId.BSC],
   // usdti: new ERC20Token(ChainId.BSC, '0x55d398326f99059ff775485246999027b3197955', 18, 'USDT', 'Tether USD'),

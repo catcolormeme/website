@@ -235,11 +235,11 @@ const config: (
         //     },
         //   ],
         // },
-        {
-          label: t('Token Deployer'),
-          href: '/create-token',
-          supportChainIds: SUPPORT_TOKEN_DEPLOYER,
-        },
+        // {
+        //   label: t('Token Deployer'),
+        //   href: '/create-token',
+        //   supportChainIds: SUPPORT_TOKEN_DEPLOYER,
+        // },
         // {
         //   label: t('Wiki'),
         //   href: languageCode === 'zh-cn' ? 'https://wiki.whalechain.live/v/zh' : 'https://wiki.whalechain.live',

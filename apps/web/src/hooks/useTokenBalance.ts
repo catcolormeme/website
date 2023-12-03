@@ -54,6 +54,7 @@ export const useGetCakeBalance = () => {
 
   // // TODO: Remove ethers conversion once useTokenBalance is converted to ethers.BigNumber
   // return { balance: EthersBigNumber.from(balance.toString()), fetchStatus }
+  return { balance: EthersBigNumber.from(0), fetchStatus: 'success' }
 }
 
 export default useTokenBalance

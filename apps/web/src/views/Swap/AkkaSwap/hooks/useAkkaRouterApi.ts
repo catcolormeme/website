@@ -94,7 +94,7 @@ export const useAkkaRouterApi = (
           if (isConnected) {
             if (akkaApproval === ApprovalState.APPROVED) {
               if (currencyBalances[Field.INPUT] && parsedAmount && (currencyBalances[Field.INPUT].greaterThan(parsedAmount) || currencyBalances[Field.INPUT].equalTo(parsedAmount))) {
-                if (chainId === ChainId.WHALE) {
+                if (chainId === ChainId.BSC) {
                   akkaContract.estimateGas[methodName](
                     response.swap.amountIn,
                     response.swap.amountOutMin,
@@ -151,7 +151,7 @@ export const useAkkaRouterApi = (
           if (isConnected) {
             if (akkaApproval === ApprovalState.APPROVED) {
               if (currencyBalances[Field.INPUT] && parsedAmount && (currencyBalances[Field.INPUT].greaterThan(parsedAmount) || currencyBalances[Field.INPUT].equalTo(parsedAmount))) {
-                if (chainId === ChainId.WHALE) {
+                if (chainId === ChainId.BSC) {
                   akkaContract.estimateGas[methodName](
                     response.swap.amountIn,
                     response.swap.amountOutMin,

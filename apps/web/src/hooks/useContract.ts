@@ -220,7 +220,7 @@ export const usePredictionsContract = (address: string, tokenSymbol: string) => 
     if (address === getPredictionsV1Address()) {
       return getPredictionsV1Contract(signer)
     }
-    const getPredContract = tokenSymbol === 'WHALE' ? getCakePredictionsContract : getPredictionsContract
+    const getPredContract = tokenSymbol === 'BSC' ? getCakePredictionsContract : getPredictionsContract
 
     return getPredContract(address, signer)
   }, [address, tokenSymbol, signer])

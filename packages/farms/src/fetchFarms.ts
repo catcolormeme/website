@@ -11,16 +11,11 @@ import { getFullDecimalMultiplier } from './getFullDecimalMultiplier'
 
 // todo: do this automatically. wrapped token and usd token is available for all chains and liquidity address can be calculated with Pair.getAddress from @pancakeswap/sdk.
 const evmNativeStableLpMap = {
-  [ChainId.WHALE]: {
-    address: '0x8e7dd0d762f60942e0bd05b1114d6cedf4435a18',
-    wNative: 'WBRISE',
-    stable: 'USDTi',
-  },
-  [ChainId.SCROLL]: {
-    address: '0x98182F51fAcEaca17cAe1aF7b0b94B1E2c2D1BA0',
-    wNative: 'WETH',
-    stable: 'USDT',
-  },
+  // [ChainId.WHALE]: {
+  //   address: '0x8e7dd0d762f60942e0bd05b1114d6cedf4435a18',
+  //   wNative: 'WBRISE',
+  //   stable: 'USDTi',
+  // },
 }
 
 export const getTokenAmount = (balance: FixedNumber, decimals: number) => {

@@ -1,9 +1,9 @@
 import { SUPPORT_FARMS } from '@pancakeswap/farms'
-import { chains, ChainId } from '@icecreamswap/constants'
+import { chains } from '@icecreamswap/constants'
 
 export { SUPPORT_FARMS }
 
-export const SUPPORT_ONLY_BITGERT = [ChainId.WHALE]
+export const SUPPORT_ONLY_BITGERT = []
 
 export const SUPPORT_SWAP = chains.filter((chain) => chain.features.includes('swap')).map((chain) => chain.id)
 export const SUPPORT_AKKA_ROUTER = chains.filter((chain) => chain.features.includes('akkaRouter')).map((chain) => chain.id)

@@ -25,16 +25,21 @@ const getTokenChartData = async (
         }
       }
     `
-    const { tokenDayDatas } = await getMultiChainQueryEndPointWithStableSwap(chainName).request<TokenDayDatasResponse>(
-      query,
-      {
-        startTime: multiChainStartTime[chainName],
-        skip,
-        address,
-      },
-    )
-    const data = tokenDayDatas.map(mapDayData)
-    return { data, error: false }
+    console.log(multiChainStartTime[chainName], 'chainName');
+    if(multiChainStartTime[chainName]){
+      const { tokenDayDatas } = await getMultiChainQueryEndPointWithStableSwap(chainName).request<TokenDayDatasResponse>(
+        query,
+        {
+          startTime: multiChainStartTime[chainName],
+          skip,
+          address,
+        },
+      )
+      const data = tokenDayDatas.map(mapDayData)
+      return { data, error: false }
+    } 
+      return { error: true }
+    
   } catch (error) {
     console.error('Failed to fetch token chart data', error)
     return { error: true }

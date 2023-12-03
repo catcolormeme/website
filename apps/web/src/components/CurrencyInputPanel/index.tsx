@@ -253,7 +253,7 @@ export default function CurrencyInputPanel({
               onUserInput={(val) => {
                 onUserInput(val)
               }}
-              autoFocus={id === 'swap-currency-input' && (chainId === ChainId.WHALE || appChainId === ChainId.WHALE)}
+              autoFocus={id === 'swap-currency-input' && (chainId === ChainId.BSC || appChainId === ChainId.BSC)}
             />
           </LabelRow>
           <InputRow selected={disableCurrencySelect}>

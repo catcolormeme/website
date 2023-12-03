@@ -6,8 +6,8 @@ import lpAprs370 from '../config/constants/lpAprs/370.json'
 
 const getLpApr = (chainId: number) => {
   switch (chainId) {
-    case ChainId.WHALE:
-      return lpAprs370
+    // case ChainId.WHALE:
+    //   return lpAprs370
     // case ChainId.CORE:
     //   return lpAprs1116
     default:

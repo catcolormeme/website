@@ -21,8 +21,8 @@ export const BLOCKS_CLIENT_WITH_CHAIN: Partial<Record<ChainId, string>> = {
   [ChainId.BSC]: 'https://api.thegraph.com/subgraphs/name/pancakeswap/blocks',
 }
 
-export const INFO_CLIENT_BITGERT = INFO_CLIENT_WITH_CHAIN[ChainId.WHALE]
-export const BLOCKS_CLIENT_BITGERT = BLOCKS_CLIENT_WITH_CHAIN[ChainId.WHALE]
+// export const INFO_CLIENT_BITGERT = INFO_CLIENT_WITH_CHAIN[ChainId.WHALE]
+// export const BLOCKS_CLIENT_BITGERT = BLOCKS_CLIENT_WITH_CHAIN[ChainId.WHALE]
 
 export const INFO_CLIENT_BSC = INFO_CLIENT_WITH_CHAIN[ChainId.BSC]
 export const BLOCKS_CLIENT_BSC = BLOCKS_CLIENT_WITH_CHAIN[ChainId.BSC]

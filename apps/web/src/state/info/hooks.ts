@@ -214,7 +214,7 @@ export const useGetChainName = () => {
     if (path.includes('chainId=56')) return 'BSC'
     if (path.includes('chainId=97')) return 'BSC TESTNET'
     if (path.includes('chainId=534352')) return 'SCROLL'
-    return 'WHALE'
+    return 'BSC'
   }, [path])
   const [name, setName] = useState<MultiChainName | null>(getChain())
   const result = useMemo(() => name, [name])

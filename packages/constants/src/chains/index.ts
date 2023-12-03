@@ -1,11 +1,11 @@
-import { whalechain } from "./whalechain"
+// import { whalechain } from "./whalechain"
 import { bscTestnet } from './bscTestnet'
 import { bsc } from './bsc'
 
 
 export const chainMap = {
   bsc,
-  whalechain,
+  // whalechain,
   // scroll,
   bscTestnet,
 }
@@ -17,7 +17,7 @@ export const getChain = (chainId: number) => {
 
 export enum ChainId {
   BSC = bsc.id,
-  WHALE = whalechain.id,
+  // WHALE = whalechain.id,
   // SCROLL = scroll.id,
   BSC_TESTNET = bscTestnet.id,
 }

@@ -18,7 +18,7 @@ export const NetworkModal = ({ pageSupportedChains = SUPPORT_ONLY_BITGERT }: { p
   const [dismissWrongNetwork, setDismissWrongNetwork] = useAtom(hideWrongNetworkModalAtom)
 
   const isBitgertOnlyPage = useMemo(() => {
-    return pageSupportedChains?.length === 1 && pageSupportedChains[0] === ChainId.WHALE
+    return pageSupportedChains?.length === 1 && pageSupportedChains[0] === ChainId.BSC
   }, [pageSupportedChains])
 
   const isPageNotSupported = useMemo(

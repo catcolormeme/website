@@ -329,7 +329,7 @@ const LimitOrders = () => {
 
   const isSideFooter = isChartExpanded || isChartDisplayed
 
-  const ACCESS_TOKEN_SUPPORT_CHAIN_IDS = [ChainId.WHALE]
+  const ACCESS_TOKEN_SUPPORT_CHAIN_IDS = [ChainId.BSC]
   const isAccessTokenSupported = ACCESS_TOKEN_SUPPORT_CHAIN_IDS.includes(chainId)
 
   return (

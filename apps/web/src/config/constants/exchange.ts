@@ -15,9 +15,6 @@ export const ROUTER_ADDRESS_COMMON_AKKA_TELOS = '0x67770F918D1F7Fac8eaA2266977bA
 export const ROUTER_ADDRESS_COMMON_AKKA_BASE = '0xF84f39714E11A8031Ad4c5D5B4437E3b5d81b6F2'
 
 export const ROUTER_ADDRESS: Partial<ChainMap<RouterAddressTypes>> = {
-  [ChainId.WHALE]: {
-    Icecream: '0x34108268D35Dbe329562C541e5d3Ca20F3154751',
-  },
   [ChainId.BSC_TESTNET]: {
     Icecream: '0x174114C8110b4A0CdF6202f60bE782b4cB3965d6',
   },
@@ -28,7 +25,6 @@ export const ROUTER_ADDRESS: Partial<ChainMap<RouterAddressTypes>> = {
 
 // used to construct intermediary pairs for trading
 export const BASES_TO_CHECK_TRADES_AGAINST: Partial<ChainTokenList> = {
-  [ChainId.WHALE]: [whaleTokens.wwhale, whaleTokens.usdt],
   [ChainId.BSC_TESTNET]: [bscTestnetTokens.usdt, bscTestnetTokens.wbnb],
   [ChainId.BSC]: [bscTokens.usdt, bscTokens.wbnb]
 }
@@ -48,25 +44,17 @@ export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: To
 
 // used for display in the default list when adding liquidity
 export const SUGGESTED_BASES: Partial<ChainTokenList> = {
-  [ChainId.WHALE]: [whaleTokens.wwhale, whaleTokens.usdt],
   [ChainId.BSC_TESTNET]: [bscTestnetTokens.usdt, bscTestnetTokens.wbnb],
   [ChainId.BSC]: [bscTokens.usdt, bscTokens.wbnb],
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
 export const BASES_TO_TRACK_LIQUIDITY_FOR: Partial<ChainTokenList> = {
-  [ChainId.WHALE]: [
-    whaleTokens.wwhale,
-    whaleTokens.usdt,
-  ],
   [ChainId.BSC_TESTNET]: [bscTestnetTokens.usdt, bscTestnetTokens.wbnb],
   [ChainId.BSC]: [bscTokens.usdt, bscTokens.wbnb],
 }
 
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token?, Token?][] } = {
-  [ChainId.WHALE]: [
-    [whaleTokens.wwhale, whaleTokens.usdt],
-  ],
   [ChainId.BSC_TESTNET]: [
     [bscTestnetTokens.usdt, bscTestnetTokens.wbnb],
   ],

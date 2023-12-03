@@ -19,11 +19,13 @@ const LP_HOLDERS_FEE = 0.0017
 const WEEKS_IN_A_YEAR = 52.1429
 
 const BLOCKS_CLIENT_WITH_CHAIN = {
-  [ChainId.WHALE]: 'https://graph.whalechain.live/subgraphs/name/simone1999/bitgert-blocks',
+  [ChainId.BSC]: 'https://api.bscgraph.org/subgraphs/name/bsc-blocklytics',
+  // [ChainId.WHALE]: 'https://graph.whalechain.live/subgraphs/name/simone1999/bitgert-uniswap',
 }
 
 const INFO_CLIENT_WITH_CHAIN = {
-  [ChainId.WHALE]: 'https://graph.whalechain.live/subgraphs/name/simone1999/bitgert-uniswap',
+  [ChainId.BSC]: 'https://api.thegraph.com/subgraphs/name/pancakeswap/exchange',
+  // [ChainId.WHALE]: 'https://graph.whalechain.live/subgraphs/name/simone1999/bitgert-uniswap',
 }
 
 const blockClientWithChain = (chainId: ChainId) => {
@@ -47,7 +49,7 @@ const getWeekAgoTimestamp = () => {
   return getUnixTime(weekAgo)
 }
 
-const getBlockAtTimestamp = async (timestamp: number, chainId = ChainId.WHALE) => {
+const getBlockAtTimestamp = async (timestamp: number, chainId = ChainId.BSC) => {
   try {
     const { blocks } = await blockClientWithChain(chainId).request<BlockResponse>(
       `query getBlock($timestampGreater: Int!, $timestampLess: Int!) {

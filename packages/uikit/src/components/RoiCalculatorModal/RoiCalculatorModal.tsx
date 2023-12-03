@@ -90,7 +90,7 @@ const RoiCalculatorModal: React.FC<React.PropsWithChildren<RoiCalculatorModalPro
   stakingTokenPrice,
   multiplier,
   initialValue,
-  earningTokenSymbol = "WHALE",
+  earningTokenSymbol = "BSC",
   autoCompoundFrequency = 0,
   performanceFee = 0,
   isFarm = false,
