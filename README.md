@@ -1,4 +1,4 @@
-# 🍦 Frontend
+# Frontend
 
 
 ssh root@164.163.9.71
