@@ -1,7 +1,6 @@
 import {
   BIT_QUERY,
   STABLESWAP_SUBGRAPH_CLIENT,
-  INFO_CLIENT_BITGERT,
   INFO_CLIENT_WITH_CHAIN
 } from '../config/constants/endpoints'
 import { GraphQLClient } from 'graphql-request'
@@ -17,16 +16,9 @@ export const infoClientWithChain = (chainId: number) => {
   return new GraphQLClient(INFO_CLIENT_WITH_CHAIN[chainId], { headers: getGQLHeaders(INFO_CLIENT_WITH_CHAIN[chainId]) })
 }
 
-export const infoClientBITGERT = new GraphQLClient(INFO_CLIENT_BITGERT)
 
 export const infoStableSwapClient = new GraphQLClient(STABLESWAP_SUBGRAPH_CLIENT)
 
-export const infoServerClient = new GraphQLClient(INFO_CLIENT_BITGERT, {
-  headers: {
-    'X-Sf': process.env.SF_HEADER,
-  },
-  timeout: 5000,
-})
 
 export const stableSwapClient = new GraphQLClient(STABLESWAP_SUBGRAPH_CLIENT, {
   headers: getGQLHeaders(STABLESWAP_SUBGRAPH_CLIENT),
