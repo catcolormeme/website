@@ -14,7 +14,7 @@
     "lint:style": "npx stylelint '**/*.{ts,tsx}'",
     "format:write": "prettier --write \"**/*.{js,jsx,ts,tsx,json}\"",
     "postinstall": "yarn run typechain",
-    "typechain": "typechain --out-dir src/config/abi/types --target=ethers-v5 \"src/config/abi/*.json\""
+    "typechain": "npx typechain --out-dir src/config/abi/types --target=ethers-v5 \"src/config/abi/*.json\""
   },
   "browserslist": {
     "production": [
