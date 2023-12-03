@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "dev": "turbo run dev --filter=web...",
-    "build": "turbo db:push db:generate && turbo run build --filter=web... --global-deps=\".env\"",
+    "build": "turbo run build --filter=web",
     "start": "turbo run start --filter=web",
     "test:config": "yarn workspace web run test:config",
     "test:ci": "yarn turbo run test --filter=[HEAD^1]",
