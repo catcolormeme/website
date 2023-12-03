@@ -85,7 +85,7 @@ export const usePoolDatasSWR = (poolAddresses: string[]): PoolData[] => {
 
   return poolAddresses
     .map((address) => {
-      return data?.[address]?.data
+      return data?.[address.toLowerCase()]?.data
     })
     .filter((pool) => pool)
 }

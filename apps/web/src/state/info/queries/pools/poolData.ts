@@ -177,6 +177,7 @@ const usePoolDatas = (poolAddresses: string[]): PoolDatas => {
 
         // Calculate data and format
         const formatted = poolAddresses.reduce((accum: { [address: string]: PoolData }, address) => {
+          address = address.toLowerCase()
           // Undefined data is possible if pool is brand new and didn't exist one day ago or week ago.
           const current: FormattedPoolFields | undefined = formattedPoolData[address]
           const oneDay: FormattedPoolFields | undefined = formattedPoolData24h[address]
