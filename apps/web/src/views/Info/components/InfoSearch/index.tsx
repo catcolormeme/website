@@ -213,7 +213,6 @@ const Search = () => {
     }
     return orderBy(tokens, (token) => token.volumeUSD, 'desc')
   }, [showWatchlist, tokens, watchListTokenData, value])
-
   const poolForList = useMemo(() => {
     if (showWatchlist) {
       return watchListPoolData.filter((pool) => poolIncludesSearchTerm(pool, value))

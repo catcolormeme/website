@@ -136,6 +136,7 @@ export const useTokenDatasSWR = (addresses?: string[]): TokenData[] | undefined 
     () => fetchAllTokenDataByAddresses(chainName, blocks, addresses),
     SWR_SETTINGS,
   )
+  
 
   const tokensWithData = useMemo(() => {
     if (!addresses) {
@@ -143,11 +144,10 @@ export const useTokenDatasSWR = (addresses?: string[]): TokenData[] | undefined 
     }
     return addresses
       .map((a) => {
-        return data?.[a]?.data
+        return data?.[a.toLowerCase()]?.data
       })
       .filter((d) => d && d.exists)
   }, [addresses, data])
-
   return tokensWithData ?? undefined
 }
 
