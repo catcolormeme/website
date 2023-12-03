@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "dev": "turbo run dev --filter=web...",
-    "build": "turbo run build --filter=web... --global-deps=\".env\"",
+    "build": "turbo db:push db:generate && turbo run build --filter=web... --global-deps=\".env\"",
     "start": "turbo run start --filter=web",
     "test:config": "yarn workspace web run test:config",
     "test:ci": "yarn turbo run test --filter=[HEAD^1]",
@@ -22,8 +22,7 @@
     "clean": "turbo run clean && rm -rf node_modules",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release-packages": "turbo run build --filter=packages/* && changeset version && changeset publish",
-    "db": "turbo db:push db:generate"
+    "release-packages": "turbo run build --filter=packages/* && changeset version && changeset publish"
   },
   "engines": {
     "node": ">=16.0.0"
