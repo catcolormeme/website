@@ -9,7 +9,7 @@ import earnIce from '../../../../../public/images/home/earn/folder.png'
 export const swapSectionData = (t: TranslateFunction): SalesSectionProps => ({
   headingText: t('Trade anything anywhere, hassle free'),
   bodyText: t(
-    'Seamless trading on many chains with the best rates thanks to the built-in DEX aggregator.'
+    'Seamless trading on many chains with the best rates thanks to the built-in DEX.'
   ),
   reverse: false,
   primaryButton: {
@@ -18,7 +18,7 @@ export const swapSectionData = (t: TranslateFunction): SalesSectionProps => ({
     external: false,
   },
   secondaryButton: {
-    to: 'https://wiki.whalechain.live/dex/swap',
+    to: 'https://whitepaper.catcolor.live/',
     text: t('Learn'),
     external: true,
   },
@@ -44,7 +44,7 @@ export const bridgeSectionData = (t: TranslateFunction): SalesSectionProps => ({
     external: false,
   },
   secondaryButton: {
-    to: 'https://wiki.whalechain.live/dex/bridge',
+    to: 'https://whitepaper.catcolor.live/',
     text: t('Learn'),
     external: true,
   },

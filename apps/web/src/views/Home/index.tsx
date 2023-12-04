@@ -124,7 +124,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
         </OuterWedgeWrapper>
         <SalesSection {...bridgeSectionData(t)} />
       </PageSection>
-      <PageSection
+      {/* <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background={theme.colors.gradientCardHeader}
         index={2}
@@ -134,7 +134,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
           <WedgeTopRight />
         </OuterWedgeWrapper>
         <SalesSection {...earnSectionData(t)} />
-      </PageSection>
+      </PageSection> */}
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background={theme.colors.background}

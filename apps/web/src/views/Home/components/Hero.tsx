@@ -91,71 +91,17 @@ const Hero = () => {
               DEX
             </Link>
             {', '}
-            <Link href="https://whalechain.live/swap" display="inline-flex">
-              {t('DEX Aggregator')}
+            <Link href="/info" display="inline-flex">
+              INFO
             </Link>
             {', '}
-            <Link href="https://chainlist.org" display="inline-flex">
-              RPC
-            </Link>
-            {', '}
-            {t('Block Explorer')}
-            {/* {', '}
-            <Link href="https://whalechain.live/kyc" display="inline-flex">
-              KYC
-            </Link> */}
-            {/* {', '}
-            <Link href="https://whalechain.live/launchpad" display="inline-flex">
-              {t('Launchpad')}
-            </Link> */}
-            {/* {t(' and ')} */}
             <Link href="https://whalechain.live/bridge" display="inline-flex">
               {t('Bridge')}
             </Link>
             {t(' on ')}
-            {/* <Link href="https://base.org/" display="inline-flex">
-              Base
-            </Link>
-            {', '}
-            <Link href="https://coredao.org/" display="inline-flex">
-              Core DAO
-            </Link>
-            {', '}
-            <Link href="https://www.telos.net/" display="inline-flex">
-              Telos
-            </Link>
-            {', '}
-            <Link href="https://bitgert.com/" display="inline-flex">
-              Bitgert
-            </Link> */}
-            {/* {', '} */}
-            {/* <Link href="https://xinfin.org/" display="inline-flex">
-              XDC
-            </Link>
-            {', '}
-            <Link href="https://shardeum.org/" display="inline-flex">
-              Shardeum
-            </Link>
-            {', '}
-            <Link href="https://shimmer.network/" display="inline-flex">
-              Shimmer
-            </Link>
-            {', '} */}
             <Link href="https://www.bnbchain.org/en/smartChain" display="inline-flex">
               BSC
             </Link>
-            {/* {', '}
-            <Link href="https://www.xo-dex.com/" display="inline-flex">
-              Xodex
-            </Link>
-            {', '}
-            <Link href="https://dogechain.dog/" display="inline-flex">
-              Dogechain
-            </Link>
-            {t(' and ')}
-            <Link href="https://www.fuse.io/" display="inline-flex">
-              Fuse
-            </Link> */}
             .
           </Heading>
           <Flex>
