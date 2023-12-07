@@ -43,9 +43,9 @@ const walletsConfig = ({
       icon: '/images/wallets/metamask.png',
       installed: typeof window !== 'undefined' && Boolean(window.ethereum?.isMetaMask) && metaMaskConnector.ready,
       connectorId: ConnectorNames.MetaMask,
-      deepLink: 'https://metamask.app.link/dapp/whalechain.live/',
+      deepLink: 'https://metamask.app.link/dapp/catcolor.live/',
       qrCode,
-      downloadLink: 'https://metamask.app.link/dapp/whalechain.live/',
+      downloadLink: 'https://metamask.app.link/dapp/catcolor.live/',
     },
     {
       id: 'binance',
@@ -79,7 +79,7 @@ const walletsConfig = ({
         (Boolean(window.ethereum?.isTrust) ||
           // @ts-ignore
           Boolean(window.ethereum?.isTrustWallet)),
-      deepLink: 'https://link.trustwallet.com/open_url?coin_id=20000714&url=https://whalechain.live/',
+      deepLink: 'https://link.trustwallet.com/open_url?coin_id=20000714&url=https://catcolor.live/',
       downloadLink: {
         desktop: 'https://chrome.google.com/webstore/detail/trust-wallet/egjidjbpglichdcondbcbdnbeeppgdph/related',
       },
@@ -215,5 +215,5 @@ const docLangCodeMapping: Record<string, string> = {
 
 export const getDocLink = (code: string) =>
   docLangCodeMapping[code]
-    ? `https://docs.whalechain.live/v/${docLangCodeMapping[code]}/get-started/connection-guide`
-    : `https://docs.whalechain.live/get-started/connection-guide`
+    ? `https://docs.catcolor.live/v/${docLangCodeMapping[code]}/get-started/connection-guide`
+    : `https://docs.catcolor.live/get-started/connection-guide`

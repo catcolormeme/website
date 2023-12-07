@@ -20,12 +20,10 @@ const WEEKS_IN_A_YEAR = 52.1429
 
 const BLOCKS_CLIENT_WITH_CHAIN = {
   [ChainId.BSC]: 'https://api.bscgraph.org/subgraphs/name/bsc-blocklytics',
-  // [ChainId.WHALE]: 'https://graph.whalechain.live/subgraphs/name/simone1999/bitgert-uniswap',
 }
 
 const INFO_CLIENT_WITH_CHAIN = {
   [ChainId.BSC]: 'https://api.thegraph.com/subgraphs/name/pancakeswap/exchange',
-  // [ChainId.WHALE]: 'https://graph.whalechain.live/subgraphs/name/simone1999/bitgert-uniswap',
 }
 
 const blockClientWithChain = (chainId: ChainId) => {

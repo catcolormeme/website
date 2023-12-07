@@ -185,7 +185,7 @@ export default function Swap() {
             {/*   </Link> */}
             {/*   . Our DEX is supporting a wide range of Chains counting {supportedChains.length} chains. Which are{' '} */}
             {/*   {supportedChainNames}. If you want to learn more about our swap, please visit our{' '} */}
-            {/*   <Link href="https://wiki.whalechain.live/dex/swap" display="inline-flex" external target="_blank"> */}
+            {/*   <Link href="https://wiki.catcolor.live/dex/swap" display="inline-flex" external target="_blank"> */}
             {/*     Wiki */}
             {/*   </Link> */}
             {/*   . */}

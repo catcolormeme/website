@@ -10,8 +10,8 @@ https://explorer.evm.shimmer.network/address/0xBbB4CCfc93657AC125F4b1f734111349d
 https://bscscan.com/txs?a=0xe020582e77b5aa9e471e1a127906476242d12cb7
 
 <p align="center">
-  <a href="https://whalechain.live">
-      <img src="https://whalechain.live/logo.png" height="128">
+  <a href="https://siteaqui">
+      <img src="https://siteaqui/logo.png" height="128">
   </a>
 </p>
 

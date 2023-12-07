@@ -6,7 +6,7 @@ export const DEFAULT_META: PageMeta = {
   title: `${process.env.NEXT_PUBLIC_NAME} Multi-chain DeFi ecosystem, Swap, Bridge, LaunchPa`,
   description:
     'Multi-chain DeFi ecosystem with Swap, Bridge and Launchpad. Trade, Bridge, Earn and Launch on Bitgert (Brise), Binance smart chain (BSC), XDC, XoDex, Dogechain, Doken, Fuse and CORE blockchain',
-  image: 'https://whalechain.live/images/hero.png',
+  image: 'https://catcolor.live/images/hero.png',
 }
 
 interface PathList {

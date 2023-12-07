@@ -1386,7 +1386,7 @@ exports[`renders correctly 1`] = `
           >
             <a
               class="c26"
-              href="https://whalechain.live/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82&chainId=56"
+              href="https://catcolor.live/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82&chainId=56"
               target="_blank"
             >
               <svg
@@ -2800,7 +2800,7 @@ exports[`renders correctly 1`] = `
               color="text"
               data-theme="dark"
               font-size="16px"
-              href="https://docs.whalechain.live/contact-us"
+              href="https://docs.catcolor.live/contact-us"
               rel="noreferrer noopener"
               target="_blank"
             >
@@ -2830,7 +2830,7 @@ exports[`renders correctly 1`] = `
               color="text"
               data-theme="dark"
               font-size="16px"
-              href="https://docs.whalechain.live/contact-us/telegram"
+              href="https://docs.catcolor.live/contact-us/telegram"
               rel="noreferrer noopener"
               target="_blank"
             >
@@ -2845,7 +2845,7 @@ exports[`renders correctly 1`] = `
               color="text"
               data-theme="dark"
               font-size="16px"
-              href="https://docs.whalechain.live/tokenomics/cake"
+              href="https://docs.catcolor.live/tokenomics/cake"
               rel="noreferrer noopener"
               target="_blank"
             >
@@ -2893,7 +2893,7 @@ exports[`renders correctly 1`] = `
               color="text"
               data-theme="dark"
               font-size="16px"
-              href="Support https://docs.whalechain.live/contact-us/customer-support"
+              href="Support https://docs.catcolor.live/contact-us/customer-support"
               rel="noreferrer noopener"
               target="_blank"
             >
@@ -2908,7 +2908,7 @@ exports[`renders correctly 1`] = `
               color="text"
               data-theme="dark"
               font-size="16px"
-              href="https://docs.whalechain.live/help/troubleshooting"
+              href="https://docs.catcolor.live/help/troubleshooting"
               rel="noreferrer noopener"
               target="_blank"
             >
@@ -2923,7 +2923,7 @@ exports[`renders correctly 1`] = `
               color="text"
               data-theme="dark"
               font-size="16px"
-              href="https://docs.whalechain.live/get-started"
+              href="https://docs.catcolor.live/get-started"
               rel="noreferrer noopener"
               target="_blank"
             >
@@ -2962,7 +2962,7 @@ exports[`renders correctly 1`] = `
               color="text"
               data-theme="dark"
               font-size="16px"
-              href="https://docs.whalechain.live"
+              href="https://docs.catcolor.live"
               rel="noreferrer noopener"
               target="_blank"
             >
@@ -2992,7 +2992,7 @@ exports[`renders correctly 1`] = `
               color="text"
               data-theme="dark"
               font-size="16px"
-              href="https://docs.whalechain.live/help/faq#is-pancakeswap-safe-has-pancakeswap-been-audited"
+              href="https://docs.catcolor.live/help/faq#is-pancakeswap-safe-has-pancakeswap-been-audited"
               rel="noreferrer noopener"
               target="_blank"
             >
@@ -3007,7 +3007,7 @@ exports[`renders correctly 1`] = `
               color="text"
               data-theme="dark"
               font-size="16px"
-              href="https://docs.whalechain.live/hiring/become-a-chef"
+              href="https://docs.catcolor.live/hiring/become-a-chef"
               rel="noreferrer noopener"
               target="_blank"
             >
@@ -3721,7 +3721,7 @@ exports[`renders correctly 1`] = `
           >
             <a
               class="c54"
-              href="https://whalechain.live/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82&chainId=56"
+              href="https://catcolor.live/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82&chainId=56"
               target="_blank"
             >
               <svg
@@ -3786,7 +3786,7 @@ exports[`renders correctly 1`] = `
           <a
             class="c56"
             data-theme="light"
-            href="https://whalechain.live/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82&chainId=56"
+            href="https://catcolor.live/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82&chainId=56"
             scale="sm"
             target="_blank"
           >

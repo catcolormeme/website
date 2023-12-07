@@ -87,7 +87,7 @@ const Hero = () => {
           </Heading>
           <Heading as="p" scale="md" mb="24px">
             {/* todo: make links display somewhat like the text, maybe a small underline or so. */}
-            <Link href="https://whalechain.live/swap" display="inline-flex">
+            <Link href="https://catcolor.live/swap" display="inline-flex">
               DEX
             </Link>
             {', '}
@@ -95,7 +95,7 @@ const Hero = () => {
               INFO
             </Link>
             {', '}
-            <Link href="https://whalechain.live/bridge" display="inline-flex">
+            <Link href="https://catcolor.live/bridge" display="inline-flex">
               {t('Bridge')}
             </Link>
             {t(' on ')}

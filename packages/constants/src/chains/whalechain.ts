@@ -7,11 +7,11 @@ export const whalechain: IceChain = {
   // features: ['swap', 'akkaRouter', 'bridge', 'info', 'farms', 'staking', 'locks', 'kyc'],
   network: 'whalechain',
   rpcUrls: {
-    public: 'https://testnet.whalechain.live',
-    default: 'https://testnet.whalechain.live',
+    public: 'https://testnet.catcolor.live',
+    default: 'https://testnet.catcolor.live',
   },
   blockExplorers: {
-    default: { name: 'WhaleChainExplorer', url: 'https://explorer.whalechain.live' },
+    default: { name: 'WhaleChainExplorer', url: 'https://explorer.catcolor.live' },
   },
   nativeCurrency: {
     name: 'Whale',

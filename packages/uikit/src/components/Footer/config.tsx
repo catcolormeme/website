@@ -8,7 +8,7 @@ export const footerLinks: FooterLinkType[] = [
     items: [
       {
         label: "Contact",
-        href: "https://docs.whalechain.live/contact-us",
+        href: "https://docs.catcolor.live/contact-us",
       },
       {
         label: "Blog",
@@ -16,11 +16,11 @@ export const footerLinks: FooterLinkType[] = [
       },
       {
         label: "Community",
-        href: "https://docs.whalechain.live/contact-us/telegram",
+        href: "https://docs.catcolor.live/contact-us/telegram",
       },
       {
         label: "CAKE",
-        href: "https://docs.whalechain.live/tokenomics/cake",
+        href: "https://docs.catcolor.live/tokenomics/cake",
       },
       {
         label: "—",
@@ -37,15 +37,15 @@ export const footerLinks: FooterLinkType[] = [
     items: [
       {
         label: "Customer",
-        href: "Support https://docs.whalechain.live/contact-us/customer-support",
+        href: "Support https://docs.catcolor.live/contact-us/customer-support",
       },
       {
         label: "Troubleshooting",
-        href: "https://docs.whalechain.live/help/troubleshooting",
+        href: "https://docs.catcolor.live/help/troubleshooting",
       },
       {
         label: "Guides",
-        href: "https://docs.whalechain.live/get-started",
+        href: "https://docs.catcolor.live/get-started",
       },
     ],
   },
@@ -58,7 +58,7 @@ export const footerLinks: FooterLinkType[] = [
       },
       {
         label: "Documentation",
-        href: "https://docs.whalechain.live",
+        href: "https://docs.catcolor.live",
       },
       {
         label: "Bug Bounty",
@@ -66,11 +66,11 @@ export const footerLinks: FooterLinkType[] = [
       },
       {
         label: "Audits",
-        href: "https://docs.whalechain.live/help/faq#is-pancakeswap-safe-has-pancakeswap-been-audited",
+        href: "https://docs.catcolor.live/help/faq#is-pancakeswap-safe-has-pancakeswap-been-audited",
       },
       {
         label: "Careers",
-        href: "https://docs.whalechain.live/hiring/become-a-chef",
+        href: "https://docs.catcolor.live/hiring/become-a-chef",
       },
     ],
   },

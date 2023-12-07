@@ -3,7 +3,7 @@ import { getChain } from "@icecreamswap/constants"
 
 export const BITGERT_BLOCK_TIME = 15
 
-export const BASE_URL = 'https://whalechain.live'
+export const BASE_URL = 'https://catcolor.live'
 export const BASE_ADD_LIQUIDITY_URL = `${BASE_URL}/add`
 export const DEFAULT_TOKEN_DECIMAL = getFullDecimalMultiplier(18)
 export const BOOSTED_FARM_GAS_LIMIT = 1000000

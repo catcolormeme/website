@@ -10,17 +10,9 @@ const getTokenLogoURL = memoize(
       if(window.location.hostname === 'localhost'){
       return `http://localhost:3000/images/${token.chainId}/tokens/${getAddress(token.address)}.png`
       } 
-        return `https://whalechain.live/images/${token.chainId}/tokens/${getAddress(token.address)}.png`
+        return `https://catcolor.live/images/${token.chainId}/tokens/${getAddress(token.address)}.png`
       
     }
-
-    /*
-    if (token && chainName[token.chainId]) {
-      return `https://raw.githubusercontent.com/simone1999/trustwallet-assets/master/blockchains/${chainName[token.chainId].toLowerCase()}/assets/${getAddress(
-        token.address,
-      )}/logo.png`
-    }
-    */
     return null
   },
   (t) => `${t.chainId}#${t.address}`,

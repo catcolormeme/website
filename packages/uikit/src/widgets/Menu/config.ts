@@ -161,7 +161,7 @@ export const userMenulinks: DropdownMenuItems[] = [
   },
   {
     type: DropdownMenuItemType.EXTERNAL_LINK,
-    href: "https://whalechain.live",
+    href: "https://catcolor.live",
     label: "Link",
   },
   {

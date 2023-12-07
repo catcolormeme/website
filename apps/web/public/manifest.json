@@ -1,8 +1,8 @@
 {
-  "short_name": "WhaleChain",
-  "name": "WhaleChain",
+  "short_name": "CatColor",
+  "name": "CatColor",
   "description": "Multi chain DeFi ecosystem",
-  "homepage_url": "https://whalechain.live",
+  "homepage_url": "https://catcolor.live",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#F8567F",

@@ -118,7 +118,7 @@ const config = ({ t }: FAQsType) => [
         {t(
           'Currently we are supporting CORE, Telos, Bitgert (Brise), XDC, Shardeum, Binance smart chain (BSC), XoDex, Dogechain and Fuse Chains, as well as soon IOTA Shimmer. For an always up to date list please take a look at our ',
         )}
-        <Link display="inline-flex" color="text" title="Wiki" href="https://wiki.whalechain.live/intro/multichain">
+        <Link display="inline-flex" color="text" title="Wiki" href="https://wiki.catcolor.live/intro/multichain">
           {t('Wiki')}
         </Link>
         {t('.')}
@@ -145,13 +145,7 @@ const config = ({ t }: FAQsType) => [
         {t(
           `An up to date list of all ${process.env.NEXT_PUBLIC_NAME} addresses for all supported chains can be found on our `,
         )}
-        <Link
-          display="inline-flex"
-          color="text"
-          title={t('Wiki')}
-          external
-          href="https://wiki.whalechain.live/intro/ice"
-        >
+        <Link display="inline-flex" color="text" title={t('Wiki')} external href="https://wiki.catcolor.live/intro/ice">
           {t('Wiki')}
         </Link>
       </Text>,

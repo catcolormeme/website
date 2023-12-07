@@ -96,7 +96,7 @@ export const Kyc: React.FC = () => {
             tokenAddress="0x913E332d552b98355587BBa82b1256BCAdbCeD48"
             tokenSymbol="ICEKYC"
             tokenDecimals={0}
-            tokenImage="https://whalechain.live/kyc.png"
+            tokenImage="https://catcolor.live/kyc.png"
             variant="success"
           >
             {t('Add NFT to MetaMask')}

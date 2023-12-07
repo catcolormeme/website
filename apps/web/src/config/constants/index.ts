@@ -31,4 +31,4 @@ export const PREDICTION_TOOLTIP_DISMISS_KEY = 'prediction-switcher-dismiss-toolt
 // Gelato uses this address to define a native currency in all chains
 export const GELATO_NATIVE = '0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee'
 
-export const EXCHANGE_DOCS_URLS = 'https://docs.whalechain.live/products/pancakeswap-exchange'
+export const EXCHANGE_DOCS_URLS = 'https://docs.catcolor.live/products/pancakeswap-exchange'

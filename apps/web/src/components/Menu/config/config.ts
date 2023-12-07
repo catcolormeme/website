@@ -79,7 +79,7 @@ const config: (
         /*
         {
           label: t('Perpetual'),
-          href: `https://perp.whalechain.live/${perpLangMap(languageCode)}/futures/BTCUSDT?theme=${perpTheme(
+          href: `https://perp.catcolor.live/${perpLangMap(languageCode)}/futures/BTCUSDT?theme=${perpTheme(
             isDark,
           )}`,
           supportChainIds: SUPPORT_ONLY_BSC,
@@ -87,7 +87,7 @@ const config: (
         },
         {
           label: t('Bridge'),
-          href: 'https://bridge.whalechain.live/',
+          href: 'https://bridge.catcolor.live/',
           type: DropdownMenuItemType.EXTERNAL_LINK,
         },
            */
@@ -182,7 +182,7 @@ const config: (
     /*
     {
       label: t('Info'),
-      href: 'https://info.whalechain.live',
+      href: 'https://info.catcolor.live',
       type: DropdownMenuItemType.EXTERNAL_LINK,
       icon: InfoIcon,
       hideSubNav: true,
@@ -242,7 +242,7 @@ const config: (
         // },
         // {
         //   label: t('Wiki'),
-        //   href: languageCode === 'zh-cn' ? 'https://wiki.whalechain.live/v/zh' : 'https://wiki.whalechain.live',
+        //   href: languageCode === 'zh-cn' ? 'https://wiki.catcolor.live/v/zh' : 'https://wiki.catcolor.live',
         //   type: DropdownMenuItemType.EXTERNAL_LINK,
         // },
         // {
@@ -294,7 +294,7 @@ const config: (
         },
         {
           label: t('Docs'),
-          href: 'https://docs.whalechain.live',
+          href: 'https://docs.catcolor.live',
           type: DropdownMenuItemType.EXTERNAL_LINK,
         },
       ].map((item) => addMenuItemSupported(item, chainId)),

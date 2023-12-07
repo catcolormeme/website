@@ -34,7 +34,7 @@ export const swapSectionData = (t: TranslateFunction): any => ({
     external: false,
   },
   secondaryButton: {
-    to: 'https://wiki.whalechain.live/dex/liquidity',
+    to: 'https://wiki.catcolor.live/dex/liquidity',
     text: t('Learn'),
     external: true,
   },

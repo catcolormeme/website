@@ -1,5 +1,5 @@
 {
-  "name": "WhaleChain Default",
+  "name": "CatColor Default",
   "timestamp": "2022-01-26T11:45:09Z",
   "version": {
     "major": 1,
@@ -7,8 +7,8 @@
     "patch": 0
   },
   "tags": {},
-  "logoURI": "https://whalechain.live/logo.png",
-  "keywords": ["whalechain", "default"],
+  "logoURI": "https://catcolor.live/logo.png",
+  "keywords": ["catcolor", "default"],
   "tokens": [
 
   ]

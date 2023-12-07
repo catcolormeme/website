@@ -66,7 +66,7 @@ export const earnSectionData = (t: TranslateFunction): SalesSectionProps => ({
     external: false,
   },
   secondaryButton: {
-    to: 'https://wiki.whalechain.live/dex/farm',
+    to: 'https://wiki.catcolor.live/dex/farm',
     text: t('Learn'),
     external: true,
   },

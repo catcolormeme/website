@@ -105,7 +105,7 @@ export const tokenRouter = router({
         patch: 0,
       },
       tags: {},
-      logoURI: 'https://whalechain.live/logo.png',
+      logoURI: 'https://catcolor.live/logo.png',
       keywords: ['default'],
       tokens: tokensSorted.map((token) => ({
         name: token.name,

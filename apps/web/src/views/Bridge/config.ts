@@ -5,7 +5,7 @@ const chains = [
     name: 'WhaleChain',
     decimals: 18,
     bridgeAddress: '0x13B59549AD625FA2F15885221dbcd2aADb0D5Ffe',
-    rpcUrl: 'https://testnet.whalechain.live',
+    rpcUrl: 'https://testnet.catcolor.live',
     type: 'Ethereum',
     nativeTokenSymbol: 'Whale',
     tokens: [
