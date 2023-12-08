@@ -1,11 +1,7 @@
 import styled from 'styled-components'
-import { Flex, Heading, Text, Link, useMatchBreakpoints, Button, TwitterIcon, TelegramIcon } from '@pancakeswap/uikit'
+import { Flex, Heading, Text, Button, TwitterIcon, TelegramIcon } from '@pancakeswap/uikit'
 import { useTranslation } from '@pancakeswap/localization'
-import ConnectWalletButton from 'components/ConnectWalletButton'
-import Container from 'components/Layout/Container'
-import { useWeb3React } from '@pancakeswap/wagmi'
 import SunburstSvg from './SunburstSvg'
-import CompositeImage from './CompositeImage'
 
 const BgWrapper = styled.div`
   overflow: hidden;
@@ -35,55 +31,8 @@ const Wrapper = styled(Flex)`
   overflow: hidden;
 `
 
-const FloatingPancakesWrapper = styled(Container)`
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  visibility: hidden;
-
-  ${({ theme }) => theme.mediaQueries.md} {
-    visibility: visible;
-  }
-`
-
-const TopLeftImgWrapper = styled(Flex)`
-  position: absolute;
-  left: 0;
-  top: 0;
-`
-
-const BottomRightImgWrapper = styled(Flex)`
-  position: absolute;
-  right: 0;
-  bottom: 0;
-`
-
-const topLeftImage = {
-  path: '/images/home/flying-pancakes/',
-  attributes: [
-    { src: '1-bottom', alt: 'Pancake flying on the bottom' },
-    { src: '1-left', alt: 'Pancake flying on the left' },
-    { src: '1-top', alt: 'Pancake flying on the top' },
-  ],
-}
-
-const bottomRightImage = {
-  path: '/images/home/flying-pancakes/',
-  attributes: [
-    { src: '2-bottom', alt: 'Pancake flying on the bottom' },
-    { src: '2-top', alt: 'Pancake flying on the top' },
-    { src: '2-right', alt: 'Pancake flying on the right' },
-  ],
-}
-
 const Footer = () => {
   const { t } = useTranslation()
-  const { account } = useWeb3React()
-  const { isTablet, isDesktop } = useMatchBreakpoints()
 
   return (
     <>
@@ -114,7 +63,7 @@ const Footer = () => {
           <Button
             as="a"
             title={t(`${process.env.NEXT_PUBLIC_NAME} Twitter`)}
-            href="https://twitter.com/whalenetwork"
+            href="https://twitter.com/CatColorToken"
             variant="primary"
             scale="md"
             mr="8px"
@@ -124,7 +73,7 @@ const Footer = () => {
           <Button
             as="a"
             title={t(`${process.env.NEXT_PUBLIC_NAME} Telegram`)}
-            href="https://t.me/WhaleChain"
+            href="https://t.me/CatColorTokenGlobal"
             variant="primary"
             scale="md"
             mr="8px"

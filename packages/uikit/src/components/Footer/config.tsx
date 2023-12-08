@@ -80,7 +80,7 @@ export const socials = [
   {
     label: "Twitter",
     icon: TwitterIcon,
-    href: "https://twitter.com/WhaleChain",
+    href: "https://twitter.com/CatColorToken",
   },
   {
     label: "Telegram",
@@ -88,7 +88,11 @@ export const socials = [
     items: [
       {
         label: "English",
-        href: "https://t.me/whalechain",
+        href: "https://t.me/CatColorTokenGlobal",
+      },
+      {
+        label: "Brazil",
+        href: "https://t.me/CatColorTokenPtBr",
       },
     ],
   },
