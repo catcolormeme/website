@@ -9,11 +9,15 @@ export const StyledSquadContainer = styled(Box)`
 export const LandingBodyWrapper = styled(Flex)`
   max-width: 1200px;
   width: 100%;
-  margin: 0 16px;
 
   ${({ theme }) => theme.mediaQueries.md} {
-    margin: 0 40px;
+    width: 100%;
   }
+`
+
+export const LandingBodyWrapperCustom = styled(Flex)`
+  display: flex;
+  row-gap: 24px;
 `
 
 export const StyledWaveContainer = styled(Box)`

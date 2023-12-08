@@ -1,22 +1,22 @@
 import { Text, Heading, Card, CardHeader, CardBody, CircleOutlineIcon, Flex } from '@pancakeswap/uikit'
 import { useTranslation } from '@pancakeswap/localization'
-import { LandingBodyWrapper } from '../../styles'
+import { LandingBodyWrapper, LandingBodyWrapperCustom } from '../../styles'
 import config from './config'
 
 const FaqSection = () => {
   const { t } = useTranslation()
 
   return (
-    <LandingBodyWrapper>
-      <LandingBodyWrapper>
+    <LandingBodyWrapper display="block">
+      <LandingBodyWrapper display="block">
         <Flex flexDirection="column">
-          <Heading scale="xl" color="secondary" display="block" marginLeft="40px">
+          <Heading scale="xl" textAlign="center" color="secondary" display="block">
             {t('Roadmap')}
           </Heading>
-          <Flex flexDirection="column">
+          <Flex flexDirection="row" justifyContent="space-between" flexWrap="wrap">
             {config({ t }).map((roadblock, i) => (
-              <div style={{ display: 'flex', gap: '24px' }}>
-                <div
+              <LandingBodyWrapperCustom>
+                {/* <div
                   style={{
                     fontSize: '24px',
                     width: '12px',
@@ -40,7 +40,7 @@ const FaqSection = () => {
                   >
                     {roadblock.icon}
                   </span>
-                </div>
+                </div> */}
                 <Card marginY="8px" style={{ flexGrow: '1' }}>
                   <CardHeader>
                     <Heading as="h3" scale="lg" color="secondary">
@@ -56,7 +56,7 @@ const FaqSection = () => {
                     </Text>
                   </CardBody>
                 </Card>
-              </div>
+              </LandingBodyWrapperCustom>
             ))}
           </Flex>
         </Flex>
