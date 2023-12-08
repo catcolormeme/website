@@ -7,7 +7,7 @@ export const chainMap = {
   bsc,
   // whalechain,
   // scroll,
-  bscTestnet,
+  // bscTestnet,
 }
 export const chains = Object.values(chainMap)
 
@@ -19,5 +19,5 @@ export enum ChainId {
   BSC = bsc.id,
   // WHALE = whalechain.id,
   // SCROLL = scroll.id,
-  BSC_TESTNET = bscTestnet.id,
+  // BSC_TESTNET = bscTestnet.id,
 }

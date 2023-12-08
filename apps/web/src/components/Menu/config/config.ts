@@ -114,12 +114,21 @@ const config: (
     //     },
     //   ].map((item) => addMenuItemSupported(item, chainId)),
     // },
+    // {
+    //   label: t('Bridge'),
+    //   href: '/bridge',
+    //   hideSubNav: true,
+    //   icon: BridgeIcon,
+    //   supportChainIds: SUPPORT_BRIDGE,
+    //   showItemsOnMobile: false,
+    //   items: [],
+    // },
     {
-      label: t('Bridge'),
-      href: '/bridge',
+      label: t('Charts'),
+      href: '/info',
       hideSubNav: true,
-      icon: BridgeIcon,
-      supportChainIds: SUPPORT_BRIDGE,
+      icon: MoreHorizontalIcon,
+      supportChainIds: SUPPORT_INFO,
       showItemsOnMobile: false,
       items: [],
     },
@@ -198,18 +207,18 @@ const config: (
     //   supportChainIds: SUPPORT_LAUNCHPAD,
     //   items: [],
     // },
-    {
-      label: t('More'),
-      icon: MoreHorizontalIcon,
-      showItemsOnMobile: true,
-      hideSubNav: true,
+    // {
+    //   label: t('More'),
+    //   icon: MoreHorizontalIcon,
+    //   showItemsOnMobile: true,
+    //   hideSubNav: true,
       // supportChainIds: [...SUPPORT_INFO, ...SUPPORT_LOCKS, ...SUPPORT_KYC],
-      items: [
-        {
-          label: t('Info'),
-          href: '/info',
-          supportChainIds: SUPPORT_INFO,
-        },
+      // items: [
+      //   {
+      //     label: t('Info'),
+      //     href: '/info',
+      //     supportChainIds: SUPPORT_INFO,
+      //   },
         // {
         //   label: t('Locks'),
         //   href: '/locks',
@@ -250,8 +259,8 @@ const config: (
         //   href: '/create-token',
         //   supportChainIds: SUPPORT_LOCKS,
         // },
-      ].map((item) => addMenuItemSupported(item, chainId)),
-    },
+      // ].map((item) => addMenuItemSupported(item, chainId)),
+    // },
     /*
     {
       label: '',
