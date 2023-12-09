@@ -132,6 +132,16 @@ const config: (
       showItemsOnMobile: false,
       items: [],
     },
+    {
+      label: t('Explorer'),
+      href: 'https://explorer.catcolor.live',
+      type: DropdownMenuItemType.EXTERNAL_LINK,
+      hideSubNav: true,
+      icon: MoreHorizontalIcon,
+      supportChainIds: SUPPORT_INFO,
+      showItemsOnMobile: false,
+      items: [],
+    },
     /*
     {
       label: t('Win'),
